@@ -71,7 +71,7 @@ function App() {
     <Maincontainer>
        <Topcontainer>
         <div className='logo'>
-            <img src="/public/images/logo.svg" alt="logo" />
+            <img src="/images/logo.svg" alt="logo" />
         </div>
         <div className='search'>
           <input onChange={searchFood} type="text" placeholder= 'Search Food' />
@@ -100,11 +100,11 @@ margin: 0 auto;
 
 const Topcontainer=styled.section`
 
-min-height: 140px;
+min-height: 100px;
 display: flex;
 justify-content: space-between ;
 align-items: center;
-padding: 60px;
+padding: 20px 40px;
 
 .search{
   input{
@@ -118,16 +118,18 @@ padding: 60px;
     margin-top: 12px; /*you can give &::placeholder so the color change of place holder here  */
   }
 }
-.logo{
-  margin-top: 12px;
+.logo img {
+  width: 100px;
+  height: auto;
 }
 
 /* to fix in small devices*/
 
-@media(0<width<600px){
+@media (max-width: 600px) {
   flex-direction: column;
+  gap: 10px;
+  padding: 20px;
 }
-
 `;
 
 const Filtercontainer=styled.section`

@@ -41,7 +41,7 @@ export default SearchResult
 
 const Foodcartcontainer=styled.section`
   min-height: calc(100vh - 231px);
-  background-image:url("/public/images/bg.png") ;
+  background-image:url("/images/bg.png") ;
   background-size: cover;
   display: flex;
   flex-direction: row;
