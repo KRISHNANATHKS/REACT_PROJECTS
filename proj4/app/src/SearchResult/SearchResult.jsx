@@ -40,7 +40,7 @@ const SearchResult = ({data}) => {
 export default SearchResult
 
 const Foodcartcontainer=styled.section`
-  min-height: calc(100vh - 231px);
+  min-height: 100vh;
   background-image:url("/images/bg.png") ;
   background-size: cover;
   display: flex;
